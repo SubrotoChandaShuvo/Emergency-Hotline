@@ -82,3 +82,23 @@ callAlert("call8", "card8");
 callAlert("call9", "card9");
 
 // console.log(getId("call4").getElementsByClassName("card4"));
+
+getId("clear").addEventListener("click",function(){
+    callHistory.length=0;
+    getId("history-container").innerText="" ;
+    // const div = document.createElement("div");
+    //   div.innerHTML = `
+    //      <div
+    //         class="bg-[#FAFAFA] flex justify-between items-center p-4 mt-2 rounded-xl"
+    //       >
+    //         <div>
+    //           <p class="font-semibold text-[18px]">${his.name}</p>
+    //           <p class="text-[#5C5C5C]">${his.number}</p>
+    //         </div>
+    //         <div>
+    //           <p>${his.time}</p>
+    //         </div>
+    //       </div>
+    //     `;
+    //   getId("history-container").appendChild(div);
+})

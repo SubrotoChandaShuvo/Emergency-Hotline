@@ -47,19 +47,19 @@
           <div
             class="flex justify-center items-center bg-[#41ff6b19] rounded-[50px] h-12 w-18 md:h-[52px] md:w-[123px]"
           >
-            <p class="pr-1 md:pr-[10px] font-semibold" id="heart-cnt">0</p>
+            <p class="pr-1 md:pr-[10px] font-bold" id="heart-cnt">0</p>
             <img src="assets/heart.png" class="h-[30px] w-[30px]" alt="" />
           </div>
           <div
             class="flex justify-center items-center bg-[#41ff6b19] rounded-[50px] h-12 w-18 md:h-[52px] md:w-[123px]"
           >
-            <p class="pr-1 md:pr-[10px] font-semibold" id="coin-cnt">100</p>
+            <p class="pr-1 md:pr-[10px] font-bold" id="coin-cnt">100</p>
             <img src="assets/coin.png" class="h-[30px] w-[30px]" alt="" />
           </div>
           <div
             class="flex justify-center items-center bg-[#00a63e] rounded-[50px] h-12 w-18 md:h-[52px] md:w-[123px]"
           >
-            <p class="pr-1 md:pr-[10px] text-white">2</p>
+            <p class="pr-1 md:pr-[10px] text-white" id="copy-cnt">0</p>
             <p class="text-white">Copy</p>
           </div>
         </div>
@@ -513,16 +513,16 @@
         </div>
 
         <!-- call history -->
-        <div class="bg-white rounded-xl p-[24px] shadow-xl lg:min-w-[400px]">
+        <div class="bg-white rounded-xl p-[24px] shadow-xl lg:min-w-[430px]">
           <div class="flex justify-between items-center">
             <div class="flex justify-center items-center">
               <i class="fa-regular fa-clock text-xl"></i>
               <h3 class="font-medium ml-2 text-xl">Call History</h3>
             </div>
             <div
-              class="flex justify-center items-center bg-[#00a63e] rounded-[50px] h-12 w-18 md:h-[52px] md:w-[123px]"
+              class="flex justify-center items-center bg-[#00a63e] rounded-[50px] h-12 w-18 md:h-[52px] md:w-[123px]  hover:bg-red-600"
             >
-              <p class="text-white">Clear</p>
+              <p class="text-white" id="clear">Clear</p>
             </div>
           </div>
           <div id="history-container">
