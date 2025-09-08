@@ -27,4 +27,3 @@ Answer:
 Answer: 
  preventDefault() : It is a method that stops the default behavior of an event. For example, if I click on a submit button of a form then it will submit the information and clear the form but if I use preventDefault() then it will not submit the form and it will not clear the form.
 
- # Emergency-Hotline
