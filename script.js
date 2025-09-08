@@ -58,6 +58,28 @@ function callAlert(id, id2) {
   });
 }
 
+// copy alert function
+function copyAlert(id, id2) {
+  getId(id).addEventListener("click", function (e) {
+    e.preventDefault;
+    const copyNumber = getId(id2).getElementsByClassName("number")[0].innerText;
+    const copyCnt = parseInt(document.getElementById("copy-cnt").innerText);
+    const newCopyCnt= copyCnt + 1;
+    
+    document.getElementById("copy-cnt").innerText = newCopyCnt;
+    // alert(`Number is copied: ${copyNumber}`);
+
+    navigator.clipboard.writeText(copyNumber)
+      .then(() => {
+        alert(`Number is copied: ${copyNumber}`);
+      })
+      .catch(err => {
+        console.error("Failed to copy text: ", err);
+      });
+
+})
+}
+
 // functionality
 const heartBtns = document.getElementsByClassName("heart-btn");
 
@@ -70,7 +92,7 @@ for (const btn of heartBtns) {
   });
 }
 
-// console.log("faisi", getEle("sub-title")[0].innerText);
+// console.log("get", getEle("sub-title")[0].innerText);
 callAlert("call1", "card1");
 callAlert("call2", "card2");
 callAlert("call3", "card3");
@@ -80,6 +102,17 @@ callAlert("call6", "card6");
 callAlert("call7", "card7");
 callAlert("call8", "card8");
 callAlert("call9", "card9");
+
+// copy alert call
+copyAlert("copy1", "card1");
+copyAlert("copy2", "card2");
+copyAlert("copy3", "card3");
+copyAlert("copy4", "card4");
+copyAlert("copy5", "card5");
+copyAlert("copy6", "card6");
+copyAlert("copy7", "card7");
+copyAlert("copy8", "card8");
+copyAlert("copy9", "card9");
 
 // console.log(getId("call4").getElementsByClassName("card4"));
 
